@@ -22,7 +22,7 @@ function App() {
   }, []);
 
   function findAvailableOptions(key) {
-    const filteredData = filterAvailableVechicles();
+    const filteredData = filterAvailableVechicles(key);
 
     if (filteredData.length === 0) {
       return [];
@@ -31,24 +31,24 @@ function App() {
     return [...new Set(options)];
   }
 
-  function filterAvailableVechicles() {
+  function filterAvailableVechicles(excludeKey) {
     if (!data) return [];
 
     let filteredVehicleData = data;
 
-    if (selectedFuelType !== "") {
+    if (excludeKey !== "fuel_type" && selectedFuelType !== "") {
       filteredVehicleData = filteredVehicleData.filter(
         (vehicle) => vehicle.fuel_type === selectedFuelType
       );
     }
     //console.log("fuel type", filteredVehicleData);
-    if (selectedMake !== "") {
+    if (excludeKey !== "make" && selectedMake !== "") {
       filteredVehicleData = filteredVehicleData.filter(
         (vehicle) => vehicle.make === selectedMake
       );
     }
     //console.log("make", filteredVehicleData);
-    if (selectedModel !== "") {
+    if (excludeKey !== "model" && selectedModel !== "") {
       filteredVehicleData = filteredVehicleData.filter(
         (vehicle) => vehicle.model === selectedModel
       );
