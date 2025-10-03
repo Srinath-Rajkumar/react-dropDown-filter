@@ -26,6 +26,10 @@ function App() {
     return [...new Set(options)];
   }
 
+  function filterAvailableVechicles(selectedValue) {
+    console.log("selected value :", selectedValue);
+  }
+
   console.log("Data:", data);
   console.log("Fuel options:", findAvailableOptions("fuel_type"));
 
@@ -35,9 +39,18 @@ function App() {
         <DropDown
           label={"Fuel Type"}
           options={findAvailableOptions("fuel_type")}
+          onChange={(e) => filterAvailableVechicles(e.target.value)}
         />
-        <DropDown label="Make" options={findAvailableOptions("make")} />
-        <DropDown label="Model" options={findAvailableOptions("model")} />
+        <DropDown
+          label="Make"
+          options={findAvailableOptions("make")}
+          onChange={(e) => filterAvailableVechicles(e.target.value)}
+        />
+        <DropDown
+          label="Model"
+          options={findAvailableOptions("model")}
+          onChange={(e) => filterAvailableVechicles(e.target.value)}
+        />
       </div>
     </>
   );
