@@ -1,0 +1,198 @@
+[
+  {
+    "label": "2500",
+    "value": "2500",
+    "fuel_type": "Hybrid",
+    "make": "Chevrolet",
+    "model": "2500"
+  },
+  {
+    "label": "Silverado EV",
+    "value": "Silverado EV",
+    "fuel_type": "Electric",
+    "make": "Chevrolet",
+    "model": "Silverado EV"
+  },
+  {
+    "label": "E-Transit",
+    "value": "E-Transit",
+    "fuel_type": "Electric",
+    "make": "Ford",
+    "model": "E-Transit"
+  },
+  {
+    "label": "F-150 Lightning",
+    "value": "F-150 Lightning",
+    "fuel_type": "Electric",
+    "make": "Ford",
+    "model": "F-150 Lightning"
+  },
+  {
+    "label": "Transit",
+    "value": "Transit",
+    "fuel_type": "Electric",
+    "make": "Ford",
+    "model": "Transit"
+  },
+  {
+    "label": "eCascadia",
+    "value": "eCascadia",
+    "fuel_type": "Hybrid",
+    "make": "Freightliner",
+    "model": "eCascadia"
+  },
+  {
+    "label": "Hummer EV Pickup",
+    "value": "Hummer EV Pickup",
+    "fuel_type": "Electric",
+    "make": "GMC",
+    "model": "Hummer EV Pickup"
+  },
+  {
+    "label": "Sierra EV",
+    "value": "Sierra EV",
+    "fuel_type": "Electric",
+    "make": "GMC",
+    "model": "Sierra EV"
+  },
+  {
+    "label": "Stripped Chassis",
+    "value": "Stripped Chassis",
+    "fuel_type": "Electric",
+    "make": "Harbinger Motors",
+    "model": "Stripped Chassis"
+  },
+  {
+    "label": "NRR EV",
+    "value": "NRR EV",
+    "fuel_type": "Electric",
+    "make": "Isuzu",
+    "model": "NRR EV"
+  },
+  {
+    "label": "MD Electric",
+    "value": "MD Electric",
+    "fuel_type": "Electric",
+    "make": "Mack",
+    "model": "MD Electric"
+  },
+  {
+    "label": "Three",
+    "value": "Three",
+    "fuel_type": "Electric",
+    "make": "Mullen",
+    "model": "Three"
+  },
+  {
+    "label": "220EV",
+    "value": "220EV",
+    "fuel_type": "Electric",
+    "make": "Peterbilt",
+    "model": "220EV"
+  },
+  {
+    "label": "520EV",
+    "value": "520EV",
+    "fuel_type": "Electric",
+    "make": "Peterbilt",
+    "model": "520EV"
+  },
+  {
+    "label": "579EV",
+    "value": "579EV",
+    "fuel_type": "Electric",
+    "make": "Peterbilt",
+    "model": "579EV"
+  },
+  {
+    "label": "P7-C",
+    "value": "P7-C",
+    "fuel_type": "Electric",
+    "make": "REE",
+    "model": "P7-C"
+  },
+  {
+    "label": "e 18L",
+    "value": "e 18L",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e 18L"
+  },
+  {
+    "label": "e18L",
+    "value": "e18L",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e18L"
+  },
+  {
+    "label": "e18L Valew Service Body",
+    "value": "e18L Valew Service Body",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e18L Valew Service Body"
+  },
+  {
+    "label": "e18L w/ Morgan Dry Freight Box",
+    "value": "e18L w/ Morgan Dry Freight Box",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e18L w/ Morgan Dry Freight Box"
+  },
+  {
+    "label": "e18L w/ Morgan ProStake Body",
+    "value": "e18L w/ Morgan ProStake Body",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e18L w/ Morgan ProStake Body"
+  },
+  {
+    "label": "e18L w/ Wabash Refrigerated Freight",
+    "value": "e18L w/ Wabash Refrigerated Freight",
+    "fuel_type": "Electric",
+    "make": "Rizon",
+    "model": "e18L w/ Wabash Refrigerated Freight"
+  },
+  {
+    "label": "W4 CC",
+    "value": "W4 CC",
+    "fuel_type": "Electric",
+    "make": "Workhorse",
+    "model": "W4 CC"
+  },
+  {
+    "label": "W4CC",
+    "value": "W4CC",
+    "fuel_type": "Electric",
+    "make": "Workhorse",
+    "model": "W4CC"
+  },
+  {
+    "label": "W4CC - Refrigerated Body",
+    "value": "W4CC - Refrigerated Body",
+    "fuel_type": "Electric",
+    "make": "Workhorse",
+    "model": "W4CC - Refrigerated Body"
+  },
+  {
+    "label": "W56",
+    "value": "W56",
+    "fuel_type": "Electric",
+    "make": "Workhorse",
+    "model": "W56"
+  },
+  {
+    "label": "220",
+    "value": "220",
+    "fuel_type": "Electric",
+    "make": "PETERBILT",
+    "model": "220"
+  },
+  {
+    "label": "F-150 PowerBoost Hybrid",
+    "value": "F-150 PowerBoost Hybrid",
+    "fuel_type": "Hybrid",
+    "make": "Ford",
+    "model": "F-150 PowerBoost Hybrid"
+  }
+]
