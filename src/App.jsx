@@ -3,6 +3,9 @@ import DropDown from "./component/DropDown";
 
 function App() {
   const [data, setData] = useState(null);
+  const [selectedFuelType, setSelectedFuelType] = useState("");
+  const [selectedMake, setSelectedMake] = useState("");
+  const [selectedModel, setSelectedModel] = useState("");
 
   useEffect(() => {
     async function fetchData() {
@@ -19,19 +22,46 @@ function App() {
   }, []);
 
   function findAvailableOptions(key) {
-    if (!data) {
+    // if (!data) {
+    //   return [];
+    // }
+    const filteredData = filterAvailableVechicles();
+
+    if (filteredData.length === 0) {
       return [];
     }
-    const options = data.map((vehicle) => vehicle[key]);
+    const options = filteredData.map((vehicle) => vehicle[key]);
     return [...new Set(options)];
   }
 
-  function filterAvailableVechicles(selectedValue) {
-    console.log("selected value :", selectedValue);
-  }
+  // console.log("Data:", data);
+  // console.log("Fuel options:", findAvailableOptions("fuel_type"));
 
-  console.log("Data:", data);
-  console.log("Fuel options:", findAvailableOptions("fuel_type"));
+  function filterAvailableVechicles() {
+    if (!data) return [];
+
+    let filteredVehicleData = data;
+
+    if (selectedFuelType !== "") {
+      filteredVehicleData = filteredVehicleData.filter(
+        (vehicle) => vehicle.fuel_type === selectedFuelType
+      );
+    }
+    console.log("fuel type", filteredVehicleData);
+    if (selectedMake !== "") {
+      filteredVehicleData = filteredVehicleData.filter(
+        (vehicle) => vehicle.make === selectedMake
+      );
+    }
+    console.log("make", filteredVehicleData);
+    if (selectedModel !== "") {
+      filteredVehicleData = filteredVehicleData.filter(
+        (vehicle) => vehicle.model === selectedModel
+      );
+    }
+    console.log("model", filteredVehicleData);
+    return filteredVehicleData;
+  }
 
   return (
     <>
@@ -39,17 +69,20 @@ function App() {
         <DropDown
           label={"Fuel Type"}
           options={findAvailableOptions("fuel_type")}
-          onChange={(e) => filterAvailableVechicles(e.target.value)}
+          onChange={(e) => setSelectedFuelType(e.target.value)}
+          value={selectedFuelType}
         />
         <DropDown
           label="Make"
           options={findAvailableOptions("make")}
-          onChange={(e) => filterAvailableVechicles(e.target.value)}
+          onChange={(e) => setSelectedMake(e.target.value)}
+          value={selectedMake}
         />
         <DropDown
           label="Model"
           options={findAvailableOptions("model")}
-          onChange={(e) => filterAvailableVechicles(e.target.value)}
+          onChange={(e) => setSelectedModel(e.target.value)}
+          value={selectedModel}
         />
       </div>
     </>

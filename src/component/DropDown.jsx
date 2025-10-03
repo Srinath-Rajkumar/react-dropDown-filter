@@ -1,4 +1,4 @@
-function DropDown({ options, label, onChange }) {
+function DropDown({ options, label, onChange ,value}) {
   return (
     <>
       <div className="flex flex-col w-full grow text-sm font-medium">
@@ -6,6 +6,7 @@ function DropDown({ options, label, onChange }) {
         <select
           className=" w-full flex justify-center p-2.5 border rounded-sm mt-1.5"
           onChange={onChange}
+          value={value}
         >
           <option value="">Select {label}</option>
           {options &&
