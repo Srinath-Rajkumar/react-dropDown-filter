@@ -13,7 +13,7 @@ function App() {
         const response = await fetch("dependency_data.json");
         const jsonData = await response.json();
         setData(jsonData);
-        console.log(jsonData);
+        //console.log(jsonData);
       } catch (error) {
         console.error(error);
       }
@@ -22,9 +22,6 @@ function App() {
   }, []);
 
   function findAvailableOptions(key) {
-    // if (!data) {
-    //   return [];
-    // }
     const filteredData = filterAvailableVechicles();
 
     if (filteredData.length === 0) {
@@ -33,9 +30,6 @@ function App() {
     const options = filteredData.map((vehicle) => vehicle[key]);
     return [...new Set(options)];
   }
-
-  // console.log("Data:", data);
-  // console.log("Fuel options:", findAvailableOptions("fuel_type"));
 
   function filterAvailableVechicles() {
     if (!data) return [];
@@ -47,19 +41,19 @@ function App() {
         (vehicle) => vehicle.fuel_type === selectedFuelType
       );
     }
-    console.log("fuel type", filteredVehicleData);
+    //console.log("fuel type", filteredVehicleData);
     if (selectedMake !== "") {
       filteredVehicleData = filteredVehicleData.filter(
         (vehicle) => vehicle.make === selectedMake
       );
     }
-    console.log("make", filteredVehicleData);
+    //console.log("make", filteredVehicleData);
     if (selectedModel !== "") {
       filteredVehicleData = filteredVehicleData.filter(
         (vehicle) => vehicle.model === selectedModel
       );
     }
-    console.log("model", filteredVehicleData);
+    //console.log("model", filteredVehicleData);
     return filteredVehicleData;
   }
 
